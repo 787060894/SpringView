@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.panku.zhengtest.springview.MainActivity">
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/springview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        app:footer="@layout/header_recycle"
+        app:header="@layout/header_recycle"
+        app:type="follow">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+    </com.liaoinstan.springview.widget.SpringView>
+</android.support.constraint.ConstraintLayout>
